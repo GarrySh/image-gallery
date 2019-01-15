@@ -1,4 +1,6 @@
+include ../image-gallery/image-gallery
+
 mixin index-page
   body.index-page
-    h1 Hello world
+    +image-gallery
     script(src="app.bundle.js")
