@@ -1,4 +1,4 @@
-import '../styles/main.styl';
+// import '../styles/main.styl';
 
 const toggleOpen = ({ currentTarget }) => {
   currentTarget.classList.toggle('image-gallery__panel--status--open');
