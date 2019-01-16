@@ -1,21 +1,62 @@
 .image-gallery
   display flex
-  font-size 40px
-  font-family: 'Amatic SC', cursive;
+  font-size 80px
+  font-family 'Amatic SC', cursive
+  overflow hidden
 
 .image-gallery__panel
-  border 1px solid black
-  background-color hsla(70,100%,40%,0.15)
+  box-sizing border-box
   height 100vh
   display flex
-  justify-content space-around
-  align-items center
   flex-direction column
-  box-sizing border-box
-  flex 1 0 140px
+  align-items center
+  justify-content center
+  flex 1 0 auto
+  color white
+  background-color #6B0FAA
+  background-position center
+  background-size cover
+  box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
+  transition font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+    flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+    background 0.2s;
+
+  :first-child
+    transform translateY(-100%)
+
+  :last-child
+    transform translateY(100%)
+
+.image-gallery__panel--index--1
+  background-image url('https://picsum.photos/1500/1500/?image=111')
+
+.image-gallery__panel--index--2
+  background-image url('https://picsum.photos/1500/1500/?image=222')
+
+.image-gallery__panel--index--3
+  background-image url('https://picsum.photos/1500/1500/?image=666')
+
+.image-gallery__panel--index--4
+  background-image url('https://picsum.photos/1500/1500/?image=444')
+
+.image-gallery__panel--index--5
+  background-image url('https://picsum.photos/1500/1500/?image=555')
+
+.image-gallery__panel--status--open
+  flex-grow 5
+
+.image-gallery__panel--status--open-active
+  :first-child,
+  :last-child
+    transform translateY(0)
 
 .image-gallery__text
-  border inherit
-  background-color inherit
-  margin 10px
-
+  margin 0
+  display flex
+  align-items center
+  justify-content center
+  flex 1 0 auto
+  width 100%
+  text-transform uppercase
+  text-shadow 1px 1px 0 rgb(0, 0, 0), 0 0 14px rgba(0, 0, 0, 0.45), 0 0 14px rgb(0, 0, 0)
+  transition transform 0.5s
