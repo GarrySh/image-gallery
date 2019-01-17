@@ -3,7 +3,7 @@ import { browserSyncConfig } from '../config';
 
 export default () => browserSync.init(browserSyncConfig);
 
-export const reload = callback => {
+export const reload = done => {
   browserSync.reload();
-  callback();
+  done();
 };
