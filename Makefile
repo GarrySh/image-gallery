@@ -13,6 +13,9 @@ test:
 test.watch:
 	yarn run test --watch
 
+deploy:
+	yarn run deploy
+
 build:
 	yarn run build
 
