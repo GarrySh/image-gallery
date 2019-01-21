@@ -2,7 +2,7 @@
   font-family: 'Amatic SC';
   font-style: normal;
   font-weight: 400;
-  src: local('Amatic SC Regular'), local('AmaticSC-Regular'), url("/assets/fonts/amatic-sc-v11-latin_cyrillic-regular.woff2") format('woff2'), url("/assets/fonts/amatic-sc-v11-latin_cyrillic-regular.woff") format('woff');
+  src: local('Amatic SC Regular'), local('AmaticSC-Regular'), url("../fonts/amatic-sc-v11-latin_cyrillic-regular.woff2") format('woff2'), url("../fonts/amatic-sc-v11-latin_cyrillic-regular.woff") format('woff');
 }
 .image-gallery {
   display: flex;
@@ -32,19 +32,19 @@
   transform: translateY(100%);
 }
 .image-gallery__panel--index--1 {
-  background-image: url("https://picsum.photos/1500/1500/?image=111");
+  background-image: url("../images/image-1.jpeg");
 }
 .image-gallery__panel--index--2 {
-  background-image: url("https://picsum.photos/1500/1500/?image=222");
+  background-image: url("../images/image-2.jpeg");
 }
 .image-gallery__panel--index--3 {
-  background-image: url("https://picsum.photos/1500/1500/?image=666");
+  background-image: url("../images/image-3.jpeg");
 }
 .image-gallery__panel--index--4 {
-  background-image: url("https://picsum.photos/1500/1500/?image=444");
+  background-image: url("../images/image-4.jpeg");
 }
 .image-gallery__panel--index--5 {
-  background-image: url("https://picsum.photos/1500/1500/?image=555");
+  background-image: url("../images/image-5.jpeg");
 }
 .image-gallery__panel--status--open {
   flex-grow: 5;
