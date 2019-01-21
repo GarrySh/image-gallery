@@ -6,7 +6,7 @@
 }
 .image-gallery {
   display: flex;
-  font-size: 20px;
+  font-size: 30px;
   font-family: 'Amatic SC', cursive;
   overflow: hidden;
 }
@@ -63,6 +63,9 @@
   text-transform: uppercase;
   text-shadow: 1px 1px 0 #000, 0 0 14px rgba(0,0,0,0.45), 0 0 14px #000;
   transition: transform 0.5s;
+}
+.image-gallery__text:nth-child(2n) {
+  font-size: 60px;
 }
 .index-page {
   margin: 0;

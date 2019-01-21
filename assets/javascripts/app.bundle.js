@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// import '../styles/main.styl';\nvar toggleOpen = function toggleOpen(_ref) {\n  var currentTarget = _ref.currentTarget;\n  currentTarget.classList.toggle('image-gallery__panel--status--open');\n};\n\nvar toggleOpenActive = function toggleOpenActive(event) {\n  if (!event.propertyName.includes('flex')) {\n    return;\n  }\n\n  console.log(event.propertyName.includes('flex'));\n  event.currentTarget.classList.toggle('image-gallery__panel--status--open-active');\n};\n\nvar panels = document.querySelectorAll('.image-gallery__panel');\npanels.forEach(function (panel) {\n  panel.addEventListener('click', toggleOpen);\n  panel.addEventListener('transitionend', toggleOpenActive);\n});\n\n//# sourceURL=webpack:///./src/scripts/index.js?");
+eval("var toggleOpen = function toggleOpen(_ref) {\n  var currentTarget = _ref.currentTarget;\n  currentTarget.classList.toggle('image-gallery__panel--status--open');\n};\n\nvar toggleOpenActive = function toggleOpenActive(event) {\n  if (!event.propertyName.includes('flex')) {\n    return;\n  }\n\n  console.log(event.propertyName.includes('flex'));\n  event.currentTarget.classList.toggle('image-gallery__panel--status--open-active');\n};\n\nvar panels = document.querySelectorAll('.image-gallery__panel');\npanels.forEach(function (panel) {\n  panel.addEventListener('click', toggleOpen);\n  panel.addEventListener('transitionend', toggleOpenActive);\n});\n\n//# sourceURL=webpack:///./src/scripts/index.js?");
 
 /***/ }),
 
